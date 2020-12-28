@@ -1,8 +1,9 @@
-import { useSliderState } from "renderless-components";
+import { Button } from "@renderlesskit/react-tailwind";
 
 export default function Home() {
-  const slider = useSliderState();
-  console.log("%c slider", "color: #aa00ff", slider);
-
-  return <div>test</div>;
+  return (
+    <Button size='lg' variant='secondary' className='m-10'>
+      I am a Button
+    </Button>
+  );
 }

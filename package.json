@@ -11,11 +11,13 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "9.5.5",
-    "cross-env": "7.0.2",
-    "next": "9.5.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "renderless-components": "^0.1.1-alpha.4"
+    "@next/bundle-analyzer": "10.0.3",
+    "autoprefixer": "^10.1.0",
+    "cross-env": "7.0.3",
+    "next": "10.0.3",
+    "postcss": "^8.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tailwindcss": "^2.0.1"
   }
 }

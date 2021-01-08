@@ -1,9 +1,8 @@
-import { RenderlesskitProvider, Button } from "@renderlesskit/react-tailwind";
-import tailwindConfig from "../tailwind.config";
+import { Button } from "@renderlesskit/react-tailwind";
 
 export default function Home() {
   return (
-    <RenderlesskitProvider tailwindConfig={tailwindConfig}>
+    <>
       <Button size='xs' variant='primary' className='m-10'>
         I am a xs primary Button
       </Button>
@@ -19,6 +18,6 @@ export default function Home() {
       <Button size='xl' variant='tertiary' className='m-10'>
         I am a xl tertiary Button
       </Button>
-    </RenderlesskitProvider>
+    </>
   );
 }

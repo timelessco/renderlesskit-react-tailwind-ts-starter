@@ -4,7 +4,7 @@ module.exports = {
   presets: [preset],
   purge: [
     "./pages/index.js",
-    "node_modules/renderlesskit-react-tailwind/styles/**/*.js",
+    "node_modules/@renderlesskit/react-tailwind/src/theme.tsx",
   ],
   theme: {
     extend: {},

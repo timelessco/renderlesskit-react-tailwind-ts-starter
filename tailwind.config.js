@@ -1,27 +1,15 @@
-const preset = require("@renderlesskit/react-tailwind/tailwind.config");
+const { preset } = require("@renderlesskit/react-tailwind/preset.js");
 
-module.exports = {
-  presets: [preset],
+module.exports = preset({
+  mode: "jit",
   purge: [
-    "./pages/index.js",
-    "node_modules/@renderlesskit/react-tailwind/src/theme.tsx",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "node_modules/@renderlesskit/react-tailwind/dist/esm/**/*",
+    "./renderlesskit.config.ts",
   ],
-  theme: {
-    extend: {},
-  },
-  variants: {},
+  darkMode: false, // or 'media' or 'class'
+  theme: { extend: {} },
+  variants: { extend: {} },
   plugins: [],
-  components: {
-    extend: {
-      button: {
-        size: {
-          xl: "h-16 min-w-16 text-xl px-8",
-        },
-        variant: {
-          primary: "bg-blue-500",
-          tertiary: "text-white bg-orange-500",
-        },
-      },
-    },
-  },
-};
+});

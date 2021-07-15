@@ -1,8 +1,8 @@
-import React from "react";
+import * as React from "react";
 import { useRouter } from "next/router";
 import { Button, ClockIcon, CaretRightIcon } from "@renderlesskit/react-tailwind";
 
-const Post = () => {
+const ButtonComp = () => {
   const router = useRouter();
   const { other, ...queries } = router.query;
   console.log("%c other", "color: #1d5673", other);
@@ -28,4 +28,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default ButtonComp;

@@ -1,5 +1,3 @@
-import * as react from "react";
-
 export const components = {
   button: {
     size: ["sm", "md", "lg", "xl"],

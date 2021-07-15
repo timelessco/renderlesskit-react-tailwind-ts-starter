@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 import Link from "next/link";
 
-import { components } from "./components";
+import { components } from "../components";
 
 export default function Home() {
   const componentsKeys = objectKeys(components) as string[];

@@ -1,3 +1,4 @@
+import "focus-visible";
 import React from "react";
 import { RenderlesskitProvider } from "@renderlesskit/react-tailwind";
 

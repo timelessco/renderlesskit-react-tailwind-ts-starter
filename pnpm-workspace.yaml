@@ -1,6 +1,7 @@
 # pnpm project settings. pnpm 11+ reads settings from this file, not from .npmrc.
 
 allowBuilds:
+  workerd: true
   core-js-pure: true
   # eslint-config-next 16 -> eslint-plugin-import-x -> unrs-resolver.
   # Its postinstall links the native resolver binary; pnpm 12 refuses to

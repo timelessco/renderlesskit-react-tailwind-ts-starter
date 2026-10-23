@@ -1,0 +1,14 @@
+# pnpm project settings. pnpm 11+ reads settings from this file, not from .npmrc.
+
+allowBuilds:
+  core-js-pure: true
+  # eslint-config-next 16 -> eslint-plugin-import-x -> unrs-resolver.
+  # Its postinstall links the native resolver binary; pnpm 12 refuses to
+  # finish the install while it is unapproved.
+  unrs-resolver: true
+
+overrides:
+  # @renderlesskit/react-tailwind pulls @react-aria/live-announcer@3.0.0, which
+  # calls ReactDOM.render. React 19 removed it, so a loading Button crashes.
+  # 3.4 announces through plain DOM nodes and needs no react-dom API.
+  "@react-aria/live-announcer": ~3.4.4

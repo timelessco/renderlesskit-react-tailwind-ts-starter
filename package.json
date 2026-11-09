@@ -11,21 +11,30 @@
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build --webpack",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build --webpack",
     "tailwind-dev": "tailwindcss -o tailwind.css --jit -w",
-    "tailwind-prod": "tailwindcss -o tailwind.css --jit --minify"
+    "tailwind-prod": "tailwindcss -o tailwind.css --jit --minify",
+    "dev:vinext": "vite dev --port 3001",
+    "build:vinext": "vite build",
+    "start:vinext": "vite preview",
+    "deploy:vinext": "vinext-cloudflare deploy"
   },
   "dependencies": {
     "@renderlesskit/react-tailwind": "^0.0.1-alpha.14",
+    "@vinext/cloudflare": "^1.1.1",
     "focus-visible": "^5.2.0",
     "next": "16.4.2",
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "vinext": "^1.2.1"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "2.0.0-beta.v.2",
     "@next/bundle-analyzer": "16.4.2",
     "@types/node": "^16.3.3",
     "@types/react": "19",
     "@types/react-dom": "19",
+    "@vitejs/plugin-react": "^6.1.2",
     "autoprefixer": "^10.3.1",
+    "cf": "1.0.0-beta.18",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.6",
     "deepmerge": "^4.2.2",
@@ -34,7 +43,9 @@
     "postcss": "^8.3.5",
     "postcss-focus-visible": "^5.0.0",
     "tailwindcss": "^2.2.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "8.3.0"
   },
-  "packageManager": "pnpm@12.14.0"
+  "packageManager": "pnpm@12.14.0",
+  "type": "module"
 }

@@ -1,5 +1,11 @@
 **This is a starter template for [Renderlesskit React Tailwind](https://github.com/timelessco/renderlesskit-react-tailwind).**
 
+## Live deployment
+
+[Open on Cloudflare Workers](https://renderlesskit-react-tailwind-ts-starter.timeless.workers.dev)
+
+Cloudflare Workers is the deployment target for this repository.
+
 Must `yarn link` the [Renderlesskit React Tailwind repo](https://github.com/timelessco/renderlesskit-react-tailwind) after cloning using the tips below,
 
 - Create a link of the library's repo by running this command directly in your terminal

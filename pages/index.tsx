@@ -25,8 +25,11 @@ export default function Home() {
                   <div className='inline-flex space-x-2'>
                     {propKeys.map((propKey) => {
                       return (
-                        <Link key={propKey} href={`/components/${component}?${prop}=${propKey}`}>
-                          <a className='text-emarald-600'>{`${propKey}`}</a>
+                        <Link
+                          key={propKey}
+                          href={`/components/${component}?${prop}=${propKey}`}
+                          className='text-emarald-600'>
+                          {`${propKey}`}
                         </Link>
                       );
                     })}
